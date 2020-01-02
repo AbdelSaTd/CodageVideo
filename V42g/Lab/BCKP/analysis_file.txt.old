@@ -1,0 +1,27 @@
+Analysis
+
+
+Originals
+Video: brandon2
+original_size: 33,4MB
+compressed_size - lzma: 15.2MB -> CompRate: 0.54
+compressed_size - zip: 22.5MB -> CompRate: 0.32
+
+Video: bus
+original_size: 8.6MB
+compressed_size - lzma: 4MB -> CompRate: 0.53
+compressed_size - zip: 5.8MB -> CompRate: 0.32
+
+Quantifications
+
+DoubleStep 4-128
+bus
+encoded : 8.7MB
+encoded-compressed - lzma: 2.2MB -> CompRate: 0.7 either 0.32 compression increase
+encoded-compressed - zip: 2.7MB -> CompRate: 0.7 either 0.32 compression increase
+decoded-compressed - lzma: 4.3MB -> CompRate: 0.5 either 0.05 compression loss
+decoded-compressed - zip: 7MB -> CompRate: 0.19 either 0.40 compression loss
+
+brandon2
+encoded: 
+

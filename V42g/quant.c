@@ -53,26 +53,35 @@ dequant[iquant][128] = 256;	// obligatoire pour tout quantificateur
 // la fonction doit etre monotone croissante pour que l'inversion fonctionne
 static void generate_default_quant( int iquant )
 {
-
-
-
-	if(iquant == 0){
+	if(iquant == 0){ // Quantification de base
+		//Quant par defaut
 		int diff, code;
 		for	( diff = 1; diff < 256; ++diff )
 		{
-		code = diff / 2 + 1;	// +1 -> +1, +255 -> +128
-		code += 128;
+			code = diff / 2 + 1;	// +1 -> +1, +255 -> +128
+			code += 128;
+			
 		if	( code > 255 ) code = 255;
 		if	( code < 128   ) code = 128;
 		quant[iquant][diff+256] = (unsigned char)code;
 		}
 	}
 	else if(iquant  == 1){
-		int diff, code;
+		//Quant constante n
+		int diff, code, kx = 16, ky = 128*kx/256, iy=0;
+		
 		for	( diff = 1; diff < 256; ++diff )
 		{
-			code = log(diff);	// +1 -> +0, +255 -> log(255) = 2.40
-			code += 128;
+			//Quant constante	
+			
+			if(diff%kx == 0){
+				iy += ky;
+			}
+			code = 128 + iy;
+			
+
+
+			//printf("%d ", code);
 
 			if	( code > 255 ) code = 255;
 			if	( code < 128   ) code = 128;
@@ -80,11 +89,33 @@ static void generate_default_quant( int iquant )
 		}
 	}
  	else if(iquant == 2){
+		//Quant n*log
 		int diff, code;
+
+		//Quant à deux niveaux
+		/*int nbQ = 2;
+		int q1 = 2, q2 = 128; // 4 - 64
+		int diff, code, qx = q1, ky = 128*qx/256, iy=0;*/
+
 		for	( diff = 1; diff < 256; ++diff )
 		{
+			//Quant n*log
+			
 			code = 8*log(diff);	// +1 -> +0, +255 -> log(255) = 2.40
 			code += 128;
+			
+
+			//Quant à deux niveaux
+			/*if(diff > 256/nbQ)
+			{
+				qx = q2;
+				ky = 128*qx/256;
+			}	
+			
+			if(diff%qx == 0){
+				iy += ky;
+			}
+			code = 128 + iy;*/
 
 			if	( code > 255 ) code = 255;
 			if	( code < 128   ) code = 128;
@@ -92,11 +123,26 @@ static void generate_default_quant( int iquant )
 		}
 	}
 	else if(iquant == 3){
-		int diff, code;
+		//int diff, code;
+
+		//Quant à deux niveaux
+		int nbQ = 2;
+		int q1 = 8, q2 = 128; // 
+		int diff, code, qx = q1, ky = 128*qx/256, iy=0;
+
 		for	( diff = 1; diff < 256; ++diff )
 		{
-			code = 16*log(diff);	// +1 -> +0, +255 -> log(255) = 2.40
-			code += 128;
+			//Quant à deux niveaux
+			if(diff > 256/nbQ)
+			{
+				qx = q2;
+				ky = 128*qx/256;
+			}	
+			
+			if(diff%qx == 0){
+				iy += ky;
+			}
+			code = 128 + iy;
 
 			if	( code > 255 ) code = 255;
 			if	( code < 128   ) code = 128;

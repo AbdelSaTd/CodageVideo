@@ -1,0 +1,145 @@
+Analysis file
+ 
+Quant_0_Default
+video: brandon2
+encoded : 33810040 bytes
+encoded-compressed (zip): 13177356 bytes -> CompRate: .611 either .291 compression increase
+encoded-compressed (lzma): 11220631 bytes -> CompRate: .669 either .129 compression increase
+
+video: bus
+encoded : 8748472 bytes
+encoded-compressed (zip): 4045949 bytes -> CompRate: .538 either .218 compression increase
+encoded-compressed (lzma): 3522682 bytes -> CompRate: .598 either .068 compression increase
+
+
+
+Quant_0_DoubleStep4-128
+video: brandon2
+encoded : 33810040 bytes
+encoded-compressed (zip): 7156461 bytes -> CompRate: .789 either .469 compression increase
+encoded-compressed (lzma): 6023680 bytes -> CompRate: .822 either .282 compression increase
+
+video: bus
+encoded : 8748472 bytes
+encoded-compressed (zip): 2689461 bytes -> CompRate: .693 either .373 compression increase
+encoded-compressed (lzma): 2225201 bytes -> CompRate: .746 either .216 compression increase
+
+
+
+Quant_0_DoubleStep4-64
+video: brandon2
+encoded : 33810040 bytes
+encoded-compressed (zip): 7153984 bytes -> CompRate: .789 either .469 compression increase
+encoded-compressed (lzma): 6021360 bytes -> CompRate: .822 either .282 compression increase
+
+video: bus
+encoded : 8748472 bytes
+encoded-compressed (zip): 2689471 bytes -> CompRate: .693 either .373 compression increase
+encoded-compressed (lzma): 2225191 bytes -> CompRate: .746 either .216 compression increase
+
+
+
+Quant_1_Cste16
+video: brandon2
+encoded : 33810040 bytes
+encoded-compressed (zip): 2861114 bytes -> CompRate: .916 either .596 compression increase
+encoded-compressed (lzma): 2323296 bytes -> CompRate: .932 either .392 compression increase
+
+video: bus
+encoded : 8748472 bytes
+encoded-compressed (zip): 1098810 bytes -> CompRate: .875 either .555 compression increase
+encoded-compressed (lzma): 899452 bytes -> CompRate: .898 either .368 compression increase
+
+
+
+Quant_1_Cste32
+video: brandon2
+encoded : 33810040 bytes
+encoded-compressed (zip): 1680681 bytes -> CompRate: .951 either .631 compression increase
+encoded-compressed (lzma): 1368848 bytes -> CompRate: .960 either .420 compression increase
+
+video: bus
+encoded : 8748472 bytes
+encoded-compressed (zip): 760614 bytes -> CompRate: .914 either .594 compression increase
+encoded-compressed (lzma): 618976 bytes -> CompRate: .930 either .400 compression increase
+
+
+
+Quant_1_Cste8
+video: brandon2
+encoded : 33810040 bytes
+encoded-compressed (zip): 4544835 bytes -> CompRate: .866 either .546 compression increase
+encoded-compressed (lzma): 3752401 bytes -> CompRate: .890 either .350 compression increase
+
+video: bus
+encoded : 8748472 bytes
+encoded-compressed (zip): 1799566 bytes -> CompRate: .795 either .475 compression increase
+encoded-compressed (lzma): 1471355 bytes -> CompRate: .832 either .302 compression increase
+
+
+
+Quant_2_4log
+video: brandon2
+encoded : 33810040 bytes
+encoded-compressed (zip): 11113554 bytes -> CompRate: .672 either .352 compression increase
+encoded-compressed (lzma): 9678168 bytes -> CompRate: .714 either .174 compression increase
+
+video: bus
+encoded : 8748472 bytes
+encoded-compressed (zip): 3933467 bytes -> CompRate: .551 either .231 compression increase
+encoded-compressed (lzma): 3455783 bytes -> CompRate: .605 either .075 compression increase
+
+
+
+Quant_2_8log
+video: brandon2
+encoded : 33810040 bytes
+encoded-compressed (zip): 11778691 bytes -> CompRate: .652 either .332 compression increase
+encoded-compressed (lzma): 10269072 bytes -> CompRate: .697 either .157 compression increase
+
+video: bus
+encoded : 8748472 bytes
+encoded-compressed (zip): 4212289 bytes -> CompRate: .519 either .199 compression increase
+encoded-compressed (lzma): 3690533 bytes -> CompRate: .579 either .049 compression increase
+
+
+
+Quant_2_DoubleStep2-128
+video: brandon2
+encoded : 33810040 bytes
+encoded-compressed (zip): 10685113 bytes -> CompRate: .684 either .364 compression increase
+encoded-compressed (lzma): 9127441 bytes -> CompRate: .731 either .191 compression increase
+
+video: bus
+encoded : 8748472 bytes
+encoded-compressed (zip): 3622660 bytes -> CompRate: .586 either .266 compression increase
+encoded-compressed (lzma): 3108012 bytes -> CompRate: .645 either .115 compression increase
+
+
+
+Quant_3_16log
+video: brandon2
+encoded : 33810040 bytes
+encoded-compressed (zip): 12145271 bytes -> CompRate: .641 either .321 compression increase
+encoded-compressed (lzma): 10357483 bytes -> CompRate: .694 either .154 compression increase
+
+video: bus
+encoded : 8748472 bytes
+encoded-compressed (zip): 4320611 bytes -> CompRate: .507 either .187 compression increase
+encoded-compressed (lzma): 3751367 bytes -> CompRate: .572 either .042 compression increase
+
+
+
+Quant_3_DoubleStep8-128
+video: brandon2
+encoded : 33810040 bytes
+encoded-compressed (zip): 12145271 bytes -> CompRate: .641 either .321 compression increase
+encoded-compressed (lzma): 10357483 bytes -> CompRate: .694 either .154 compression increase
+
+video: bus
+encoded : 8748472 bytes
+encoded-compressed (zip): 4320611 bytes -> CompRate: .507 either .187 compression increase
+encoded-compressed (lzma): 3751367 bytes -> CompRate: .572 either .042 compression increase
+
+
+

@@ -18,10 +18,15 @@ int main( int argc, char **argv )
 int iquant, breadth;
 printf("programme de codage-decodage v42 version g sur AVI BGR\n");
 
-if	( argc < 4 )
-	usage();
+char opt;
 
-char opt = *argv[3];
+if(argc == 2 && *argv[1] == 'j')
+	opt = *argv[1];
+else if	( argc < 4 )
+	usage();
+else
+	opt = *argv[3];
+	
 
 if	( argc >= 5 )
 	iquant = atoi( argv[4] );

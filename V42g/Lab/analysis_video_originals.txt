@@ -1,0 +1,13 @@
+*************************************************************************************
+Originals
+video: brandon2
+original_size: 33,4MB
+compressed_size - lzma: 15.2MB -> CompRate: 0.54
+compressed_size - zip: 22.5MB -> CompRate: 0.32
+
+video: bus
+original_size: 8.6MB
+compressed_size - lzma: 4MB -> CompRate: 0.53
+compressed_size - zip: 5.8MB -> CompRate: 0.32
+
+************************************************************************************
