@@ -1,9 +1,9 @@
 1- Compiler et tester l'encodeur et le décodeur fournis, observer la vidéo codée et décodée 
 
 La vidéo codée est grise de taille légérement supérieure à la vidéo originale.
-Cela à cause de l'encodage des vecteurs de mouvement !?
+Grise à cause du fait que l'on encode la différence et légèrment plus grande à cause de l'encodage des vecteurs de mouvement qui n'est plus nulle (?!)
 
-La vidéo décodée est identique en taille et en forme à la vidéo originale.
+Cependant la vidéo décodée est identique en taille et en forme à la vidéo originale.
 
 
 *****************************************************************************************
